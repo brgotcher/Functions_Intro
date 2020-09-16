@@ -9,13 +9,12 @@ def is_palindrome(string):
     return string[::-1].casefold() == string.casefold()
 
 
-def palindrome_sentence(string):
-    slist = []
-    for char in string:
+def palindrome_sentence(sentence):
+    string = ""
+    for char in sentence:
         if char.isalnum():
-            slist.append(char)
-    alphanum = "".join(slist)
-    return alphanum[::-1].casefold() == alphanum.casefold()
+            string += char
+    return string[::-1].casefold() == string.casefold()
 
 
 

@@ -17,17 +17,17 @@ def palindrome_sentence(sentence):
     return is_palindrome(string)
 
 
-
 # word = input("Please enter a word to check: ")
 # if is_palindrome(word):
 #     print("'{}' is a palindrome".format(word))
 # else:
 #     print("'{}' is not a palindrome".format(word))
 
-sentence = input("Please enter a sentence to check: ")
-if palindrome_sentence(sentence):
-    print("'{}' is a palindrome".format(sentence))
-else:
-    print("'{}' is not a palindrome".format(sentence))
+# sentence = input("Please enter a sentence to check: ")
+# if palindrome_sentence(sentence):
+#     print("'{}' is a palindrome".format(sentence))
+# else:
+#     print("'{}' is not a palindrome".format(sentence))
 
-
+answer = multiply(18, 3)
+print(answer)

@@ -19,9 +19,3 @@ banner_text("*")
 banner_text("BANNER TEXT FUNCTION")
 banner_text("*")
 banner_text("*")
-
-result = banner_text("Nothing is returned")
-print(result)
-
-numbers = [4, 2, 7, 5, 8, 3, 9, 6, 1]
-print(numbers.sort())

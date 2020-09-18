@@ -35,17 +35,21 @@ def palindrome_sentence(sentence):
     return is_palindrome(string)
 
 
-# word = input("Please enter a word to check: ")
-# if is_palindrome(word):
-#     print("'{}' is a palindrome".format(word))
-# else:
-#     print("'{}' is not a palindrome".format(word))
+def fibonacci(n):
+    """Return the `n` th fibonacci number, for positive `n` """
+    if 0 <= n <= 1:
+        return n
 
-# sentence = input("Please enter a sentence to check: ")
-# if palindrome_sentence(sentence):
-#     print("'{}' is a palindrome".format(sentence))
-# else:
-#     print("'{}' is not a palindrome".format(sentence))
+    n_minus1, n_minus2 = 1, 0
 
-answer = multiply(18, 3)
-print(answer)
+    result = None
+    for f in range(n - 1):
+        result = n_minus2 + n_minus1
+        n_minus2 = n_minus1
+        n_minus1 = result
+
+    return result
+
+
+for i in range(36):
+    print(i, fibonacci(i))

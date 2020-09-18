@@ -1,4 +1,4 @@
-def multiply(x, y):
+def multiply(x: float, y: float) -> float:
     """
     Multiply two `ints` or `floats` and return the product
     :param x: first `int` or `float` to be multiplied
@@ -9,7 +9,7 @@ def multiply(x, y):
     return result
 
 
-def is_palindrome(string):
+def is_palindrome(string: str) -> bool:
     """
     Check a string to see if it is identical forward and backwards.
     NOT case sensitive.
@@ -21,7 +21,7 @@ def is_palindrome(string):
     return string[::-1].casefold() == string.casefold()
 
 
-def palindrome_sentence(sentence):
+def palindrome_sentence(sentence: str) -> bool:
     """
     Check a string to see if it is identical forward and backwards,
     excluding whitespace and punctuation.  NOT case sensitive.
@@ -35,7 +35,7 @@ def palindrome_sentence(sentence):
     return is_palindrome(string)
 
 
-def fibonacci(n):
+def fibonacci(n: int) -> int:
     """Return the `n` th fibonacci number, for positive `n` """
     if 0 <= n <= 1:
         return n
@@ -53,3 +53,5 @@ def fibonacci(n):
 
 for i in range(36):
     print(i, fibonacci(i))
+
+p = palindrome_sentence(242)
